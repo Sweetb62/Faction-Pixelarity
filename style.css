@@ -1,0 +1,624 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+p {
+  line-height: 25px;
+  font-size: 14px;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  margin: 0;
+  padding: 20px 30px;
+  background-color: rgb(8, 197, 172);
+  display: flex;
+  align-items: center;
+  z-index: 99;
+}
+
+.logo {
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+  letter-spacing: 3px;
+}
+
+.items {
+  display: flex;
+  color: white;
+  align-items: center;
+  text-align: right;
+  cursor: pointer;
+}
+
+nav {
+  margin-left: auto;
+  display: flex;
+  position: relative;
+}
+
+.menuList {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+
+.menu {
+  display: none;
+  position: absolute;
+  border-radius: 10px;
+  background-color: whitesmoke;
+  padding: 10px;
+  padding-right: 80px;
+  line-height: 30px;
+}
+
+.drop:hover .menu {
+  display: block;
+}
+
+.m {
+  color: darkgray;
+  margin: 1px;
+}
+
+.sub {
+  background-color: whitesmoke;
+  border-radius: 10px;
+  display: none;
+  padding: 10px;
+  position: absolute;
+  line-height: 30px;
+  align-content: space-between;
+  margin:  10px 0 50px 0;
+}
+
+.submenu:hover .sub {
+  display: block;
+  
+}
+
+.arrow {
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  background-color: whitesmoke;
+  left: 30%;
+  top: -5px;
+  transform: rotate(45deg);
+  border-radius: 1px;
+}
+
+.login {
+  cursor: pointer;
+  color: white;
+  border: 1px solid white;
+  padding: 10px 25px;
+  border-radius: 20px;
+}
+
+.logos {
+  color: white;
+  font-size: 15px;
+}
+
+.sec1 {
+  background-color: whitesmoke;
+  background-size: 100%;
+}
+
+.hero {
+  background-color: rgb(59, 68, 78);
+  padding: 120px 80px;
+  margin-top: 80px;
+}
+
+.space {
+  padding: 30px 0;
+  line-height: 28px;
+}
+
+.top {
+  color: white;
+}
+
+.button {
+  border-radius: 30px;
+  padding: 10px;
+  width: 20%;
+  height: 50px;
+  background-color: transparent;
+  border-color: white;
+  color: white;
+  border-style: solid;
+  border-width: 1px;
+  transition: 0.5s;
+}
+
+.button:hover {
+  color: aqua;
+  border-color: aqua;
+  cursor: pointer;
+}
+
+.img {
+  border-radius: 100%;
+  width: 30%;
+  height: 14vh;
+}
+
+main {
+  padding: 80px 30px;
+  background-color: whitesmoke;
+}
+
+section {
+  display: flex;
+  width: 100%;
+}
+
+.part1 {
+  width: 100%;
+}
+
+aside {
+  width: 35%;
+  margin-left: 1px;
+  margin-top: 80px;
+}
+
+.aside-box {
+  padding: 50px;
+  background-color: white;
+  margin-bottom: 1px;
+}
+
+.mag {
+  color: aqua;
+  font-size: 30px;
+}
+
+.words {
+  color: darkgray;
+  line-height: 28px;
+  padding: 30px 0;
+}
+
+.log {
+  background-color: transparent;
+  height: 40px;
+  margin-top: 20px;
+  width: 40%;
+  border-radius: 30px;
+  color: darkgray;
+  border-color: darkgray;
+  border-style: solid;
+  border-width: 1px;
+  transition: 0.5s;
+}
+
+.log:hover {
+  color: aqua;
+  border-color: aqua;
+  cursor: pointer;
+}
+
+.sed {
+  font-size: 30px;
+  padding: 70px 0;
+  color: aqua;
+}
+
+.date {
+  font-size: small;
+  color: darkgray;
+}
+
+.non {
+  color: aqua;
+  padding: 20px;
+}
+
+.wor {
+  color: darkgray;
+}
+
+.logi {
+  width: 50%;
+  height: 40px;
+  padding: 10px;
+  margin-top: 30px;
+  border-radius: 30px;
+  background-color: transparent;
+  color: darkgray;
+  border-color: darkgray;
+  border-style: solid;
+  border-width: 1px;
+  transition: 0.5s;
+}
+
+.logi:hover {
+  color: aqua;
+  border-color: aqua;
+  cursor: pointer;
+}
+
+.two {
+  margin-bottom: 1px;
+}
+
+.one {
+  padding: 40px;
+  background-color: white;
+  margin-bottom: 1px;
+}
+
+.mattis {
+  color: aqua;
+  font-size: 40px;
+}
+
+.wo {
+  margin: 20px 0;
+  color: darkgray;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+}
+
+.box {
+  background-color: white;
+  color: darkgray;
+  padding: 40px;
+}
+
+.box-h {
+  color: aqua;
+  padding: 10px 0;
+}
+
+.botton {
+  border-radius: 20px;
+  padding: 10px;
+  width: 30%;
+  margin-top: 30px;
+  background-color: transparent;
+  color: darkgray;
+  border-color: darkgray;
+  border-style: solid;
+  border-width: 1px;
+  transition: 0.5s;
+}
+
+.botton:hover {
+  color: aqua;
+  border-color: aqua;
+  cursor: pointer;
+}
+
+.etiam {
+  color: darkgray;
+}
+
+.etiam:hover {
+  color: aqua;
+}
+.arcu {
+  color: aqua;
+}
+
+.mat {
+  margin-bottom: 1px;
+  padding: 20px;
+}
+.posts {
+  width: 40%;
+  height: 40px;
+  border-radius: 20px;
+  border-style: solid;
+  border-width: 1px;
+  background-color: transparent;
+  border-color: darkgray;
+  color: darkgray;
+  margin-top: 30px;
+  transition: 0.5s;
+}
+
+.posts:hover {
+  color: aqua;
+  border-color: aqua;
+  cursor: pointer;
+}
+
+footer {
+  margin: 120px 0;
+}
+
+.main-footer {
+  display: flex;
+  background-color: white;
+}
+
+.about {
+  display: flex;
+}
+
+.main-about {
+  padding: 60px;
+}
+
+.names {
+  padding: 120px 0;
+}
+
+.name {
+  color: rgb(88, 85, 85);
+  padding: 10px 0;
+}
+
+.word {
+  color: darkgray;
+}
+.swe{
+  padding-top: 20px;
+}
+.sweet{
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact {
+  padding: 0px;
+  gap: 1px;
+  padding-left: 200px;
+}
+
+.addr {
+  padding-left: 30px;
+  padding: 20px 0;
+  line-height: 28px;
+}
+
+.copyright {
+  margin-top: 1px;
+  background-color: white;
+  padding: 60px;
+  text-align: center;
+  color: darkgray;
+}
+
+.sec2 {
+  background-color: whitesmoke;
+}
+
+.part2 {
+  width: 100%;
+}
+
+.image {
+  overflow: hidden;
+}
+.image .desert {
+  height: 100%;
+  width: 100%;
+  display: block;
+  transition: ease-in-out 0.5s;
+  cursor: pointer;
+  transition: 0.3s;
+  overflow: hidden;
+}
+
+.two:hover .image .desert {
+  transform: scale(1.4);
+}
+
+.phone {
+  color: darkgray;
+  line-height: 28px;
+  cursor: pointer;
+}
+
+.phone:hover {
+  color: aqua;
+}
+
+.icon {
+  border: 1px solid darkgray;
+  border-radius: 50px;
+  padding: 10px;
+  color: darkgray;
+}
+
+.bi-list {
+  color: white;
+  font-size: 30px;
+  position: relative;
+  display: none;
+}
+
+.bi-x {
+  color: white;
+  font-size: 30px;
+  position: relative;
+  display: none;
+}
+
+@media (max-width: 740px) {
+  .bi-list {
+    display: block;
+    cursor: pointer;
+  }
+  .bi-x {
+    display: block;
+    cursor: pointer;
+  }
+  .nav {
+    display: block;
+  }
+  header {
+    width: 100%;
+  }
+  .menuList {
+    position: absolute;
+    background-color: aqua;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: 0;
+    text-align: left;
+    z-index: 2;
+    right: -400px;
+    display: block;
+    line-height: 50px;
+    transition: 1s;
+  }
+  .login {
+    padding: 5px;
+    border-radius: 20px;
+    border-width: 1px;
+    background-color: transparent;
+    width: 80px;
+  }
+  section {
+    flex-direction: column;
+  }
+  .hero {
+    padding: 120px 80px;
+    margin-top: 20px;
+    width: 550px;
+  }
+  .button {
+    border-radius: 30px;
+    padding: 10px;
+    height: 50px;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1px;
+  }
+  aside {
+    width: 100%;
+    margin-top: 1px;
+  }
+  .log {
+    width: 20%;
+  }
+  .logi {
+    width: 20%;
+  }
+  .posts {
+    width: 20%;
+  }
+  .about {
+    flex-direction: column;
+  }
+  .main-footer {
+    flex-direction: column;
+  }
+  footer {
+    margin-top: 1px;
+    width: 550px;
+  }
+  .names {
+    padding: 0px 50px;
+  }
+  .contact {
+    padding: 40px;
+  }
+  .addr {
+    padding: 30px;
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .bi-list {
+    display: block;
+    cursor: pointer;
+  }
+  .bi-x {
+    display: block;
+    cursor: pointer;
+  }
+  .nav {
+    display: block;
+  }
+  .menuList {
+    position: absolute;
+    background-color: aqua;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: 0;
+    text-align: left;
+    z-index: 2;
+    right: -400px;
+    display: block;
+    line-height: 50px;
+    transition: 1s;
+  }
+  .login {
+    padding: 5px;
+    border-radius: 20px;
+    border-width: 1px;
+    background-color: transparent;
+    width: 80px;
+  }
+  section {
+    flex-direction: column;
+    background-color: white;
+    background-size: auto;
+  }
+  .hero {
+    padding: 120px 80px;
+    margin-top: 20px;
+    width: 100%;
+  }
+  .button {
+    border-radius: 30px;
+    padding: 10px;
+    height: 50px;
+  }
+  aside {
+    width: 100%;
+    margin-top: 1px;
+  }
+  .log {
+    width: 20%;
+  }
+  .logi {
+    width: 20%;
+  }
+  .posts {
+    width: 20%;
+  }
+  .main-footer {
+    flex-direction: column;
+  }
+  footer {
+    margin-top: 1px;
+    width: 100%;
+  }
+  .names {
+    padding: 130px 50px;
+  }
+  .contact {
+    padding: 40px;
+  }
+  .addr {
+    padding: 30px;
+  }
+}
